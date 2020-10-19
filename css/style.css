@@ -65,6 +65,10 @@ body {
   .menu-item:last-child {
     border: 2px solid #837d87;
     padding: 0.9rem 2rem; }
+    .menu-item:last-child:hover {
+      background-color: #2b272f;
+      color: #fafafa;
+      border: 2px solid #2b272f; }
   @media (max-width: 600px) {
     .menu-item {
       font-size: 1.4rem; }
@@ -211,6 +215,9 @@ body {
   color: #fff;
   padding: 1rem 3rem;
   text-transform: uppercase; }
+  .action-button:hover {
+    background-color: #fff;
+    color: #2b272f; }
 
 .second-headline {
   font-size: 7rem;
@@ -357,6 +364,8 @@ ion-icon {
   margin-left: 1.5rem; }
   ion-icon:not(:last-of-type) {
     margin-left: 1.5rem; }
+  ion-icon:hover {
+    color: #837d87; }
   @media (max-width: 600px) {
     ion-icon {
       font-size: 25px; } }

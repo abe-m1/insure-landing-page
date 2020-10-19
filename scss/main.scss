@@ -111,6 +111,12 @@ body {
   &:last-child {
     border: 2px solid $darkGrayishViolet;
     padding: 0.9rem 2rem;
+
+    &:hover {
+      background-color: $veryDarkViolet;
+      color: $veryLightGray;
+      border: 2px solid $veryDarkViolet;
+    }
   }
 
   @include respond(phone) {
@@ -299,6 +305,11 @@ body {
   color: $white;
   padding: 1rem 3rem;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $white;
+    color: $veryDarkViolet;
+  }
 }
 
 .second-headline {
@@ -475,6 +486,9 @@ ion-icon {
 
   &:not(:last-of-type) {
     margin-left: 1.5rem;
+  }
+  &:hover {
+    color: $darkGrayishViolet;
   }
 
   @include respond(phone) {
