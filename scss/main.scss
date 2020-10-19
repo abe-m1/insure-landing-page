@@ -85,7 +85,9 @@ body {
   z-index: 4;
 
   @include respond(phone) {
-    height: 6rem;
+    height: 8.5rem;
+    width: 90%;
+    margin: auto;
   }
 }
 
@@ -149,7 +151,7 @@ body {
   // overflow: hidden;
 
   @include respond(phone) {
-    margin-bottom: 17rem;
+    margin-bottom: 20rem;
   }
 }
 
@@ -180,7 +182,8 @@ body {
   width: 8.7rem;
   margin-bottom: 2.6rem;
   @include respond(phone) {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    width: 9rem;
   }
 }
 
@@ -197,7 +200,8 @@ body {
   margin-bottom: 1.8rem;
   font-family: 'DM Serif Display', sans-serif;
   @include respond(phone) {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -232,10 +236,37 @@ body {
   }
 }
 
+.pattern-mobile {
+  display: none;
+
+  @include respond(phone) {
+    display: block;
+    position: absolute;
+    top: 86rem;
+    right: 0rem;
+    width: 37%;
+  }
+}
+
 .pattern-left {
   position: absolute;
   top: 44%;
   width: 15%;
+
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+.pattern-left-mobile {
+  display: none;
+
+  @include respond(phone) {
+    display: block;
+    position: absolute;
+    top: 47%;
+    width: 46%;
+  }
 }
 
 .left {
@@ -251,6 +282,8 @@ body {
 
   @include respond(phone) {
     padding-top: 10rem;
+    padding-bottom: 11rem;
+    align-items: center;
   }
 }
 
@@ -284,6 +317,10 @@ body {
   @include respond(phone) {
     font-size: 5rem;
     text-align: center;
+
+    &:last-of-type {
+      margin-bottom: 1.8rem;
+    }
   }
 }
 
@@ -296,6 +333,7 @@ body {
     text-align: center;
     line-height: 1.6;
     margin-bottom: 4rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -306,6 +344,9 @@ body {
   padding: 1rem 3rem;
   text-transform: uppercase;
 
+  @include respond(phone) {
+    font-size: 1.4rem;
+  }
   &:hover {
     background-color: $white;
     color: $veryDarkViolet;
@@ -320,12 +361,16 @@ body {
 
   @include respond(phone) {
     text-align: center;
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 
 .second-section {
   margin-bottom: 14rem;
+
+  @include respond(phone) {
+    margin-bottom: 11rem;
+  }
 }
 
 .second-section:before {
@@ -357,9 +402,12 @@ body {
   @include respond(phone) {
     display: block;
     width: 90%;
-    padding: 6rem 2rem;
+    padding: 8rem 2rem;
     text-align: center;
-    margin-bottom: 18rem;
+    margin-bottom: 16rem;
+    background: url(/images/bg-pattern-how-we-work-mobile.svg) no-repeat top
+      right;
+    background-color: $darkViolet;
   }
 }
 
@@ -371,8 +419,10 @@ body {
   line-height: 1;
 
   @include respond(phone) {
-    font-size: 4rem;
+    font-size: 4.3rem;
     width: 100%;
+    font-weight: 400;
+    margin-bottom: 5rem;
   }
 }
 
@@ -385,12 +435,17 @@ body {
 }
 
 .footer {
-  background-color: $veryLightGray;
+  // background-color: $veryLightGray;
+  background-color: red;
   padding: 2.3rem 4rem;
   background: url(/images/bg-pattern-footer-desktop.svg) no-repeat top left;
+  background-color: $veryLightGray;
+  @include respond(phone) {
+    padding: 6.5rem 4rem 5rem 4rem;
+  }
 }
 .footer-top {
-  padding: 3rem 0;
+  padding: 4rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -412,6 +467,12 @@ body {
   }
 }
 
+.footer-row ul {
+  @include respond(phone) {
+    margin-bottom: 5rem;
+  }
+}
+
 .footer-logo {
   width: 12rem;
 
@@ -427,6 +488,10 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5rem;
+
+  @include respond(phone) {
+    margin-bottom: 1.8rem;
+  }
 }
 
 .footer-row ul li {
@@ -474,6 +539,9 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  @include respond(phone) {
+    display: none;
+  }
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
