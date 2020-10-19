@@ -155,16 +155,6 @@ body {
   }
 }
 
-// .hero:after {
-//   content: '';
-//   background: url(/images/bg-pattern-intro-right-desktop.svg) no-repeat;
-//   width: 100%;
-//   height: 100%;
-//   top: 80px;
-//   right: 50px;
-//   position: absolute;
-// }
-
 .hero:before {
   content: '';
   width: 15rem;
@@ -378,8 +368,6 @@ body {
   width: 15rem;
   border-top: solid 1px $grayishBlue;
   position: absolute;
-  // left: 0;
-  // top: 50%;
   margin-top: -4rem;
   z-index: 1;
 
@@ -435,8 +423,6 @@ body {
 }
 
 .footer {
-  // background-color: $veryLightGray;
-  background-color: red;
   padding: 2.3rem 4rem;
   background: url(/images/bg-pattern-footer-desktop.svg) no-repeat top left;
   background-color: $veryLightGray;
